@@ -14,7 +14,8 @@ type Session struct {
 
 // NewSession create a new session
 func NewSession(conn *Conn) *Session {
-	id, _ := uuid.NewV4()
+	//id, _ := uuid.NewV4()
+	id := uuid.NewV4()
 	session := &Session{
 		sID:      id.String(),
 		uID:      "",
